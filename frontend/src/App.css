@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  background-color: #BDE3F2; /* Fondo azul claro */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #062601; /* Verde oscuro */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.2s; /* Añadir transición para la animación */
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #315259; /* Fondo azul petróleo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #BDE3F2; /* Texto azul claro */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(1, 13, 0, 0.2); /* Sombra más oscura */
+}
+
+.App-link {
+  color: #6A9BA6; /* Azul medio */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+  transition: color 0.3s; /* Transición de color */
+}
+
+.App-link:hover {
+  color: #062601; /* Verde oscuro al pasar el ratón */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

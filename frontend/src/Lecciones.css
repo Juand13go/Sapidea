@@ -1,0 +1,67 @@
+.lecciones-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ECF0F1; /* Texto claro */
+}
+
+.lecciones-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ECF0F1; /* Texto claro */
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.lecciones-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.leccion-card {
+  padding: 20px;
+  background-color: rgba(44, 62, 80, 0.9); /* Azul oscuro translúcido */
+  border: 2px solid #2980B9; /* Azul brillante para los bordes */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.leccion-titulo {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #FFFFFF; /* Texto blanco */
+  margin-bottom: 15px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFFFFF; /* Texto blanco */
+  background-color: #2980B9; /* Azul brillante */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  background-color: #1ABC9C; /* Verde azulado */
+  transform: scale(1.05); /* Efecto de aumento */
+}
+
+.error {
+  color: #E74C3C; /* Rojo para mensajes de error */
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+}

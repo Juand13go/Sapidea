@@ -1,0 +1,153 @@
+/* Fondo general con animación */
+.background-animated {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2980B9, #1ABC9C); /* Degradado azul brillante a verde azulado */
+  overflow: hidden;
+}
+
+.background-animated::before {
+  content: '📚 SAPIDEA 📚';
+  position: absolute;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(236, 240, 241, 0.1); /* Texto translúcido claro */
+  white-space: nowrap;
+  transform: rotate(-20deg);
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100vw) rotate(-20deg);
+  }
+  100% {
+    transform: translateX(100vw) rotate(-20deg);
+  }
+}
+
+/* Contenedor principal del formulario */
+.register-container {
+  position: relative;
+  width: 380px;
+  padding: 50px;
+  background-color: rgba(44, 62, 80, 0.85); /* Azul oscuro translúcido */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
+}
+
+/* Personaje sobre el formulario */
+.character {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: #1ABC9C; /* Verde azulado */
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para los ojos del personaje */
+.eye {
+  width: 18px;
+  height: 18px;
+  background-color: #34495E; /* Azul oscuro */
+  border-radius: 50%;
+  position: absolute;
+}
+
+.left-eye {
+  left: 25px;
+  top: 35px;
+}
+
+.right-eye {
+  right: 25px;
+  top: 35px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.register-form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.register-form-input,
+.register-form-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #1ABC9C; /* Verde azulado */
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  color: #707070; 
+  background-color: rgba(44, 62, 80, 0.8); 
+}
+
+.register-form-input:focus,
+.register-form-select:focus {
+  border-color: #2980B9; /* Azul brillante */
+  background-color: rgba(41, 128, 185, 0.1); /* Fondo azul claro translúcido */
+}
+
+.register-form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%232980B9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ECF0F1; /* Texto claro */
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.register-form-button {
+  background-color: #2980B9; /* Azul brillante */
+  color: #ECF0F1; /* Texto claro */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.register-form-button:hover {
+  background-color: #1ABC9C; /* Verde azulado */
+}
+
+.register-form-message {
+  font-size: 14px;
+  color: #E74C3C; /* Rojo para mensajes de error */
+  text-align: center;
+}

@@ -1,0 +1,116 @@
+/* Navbar general */
+.navbar {
+  background-color: #2C3E50; /* Fondo azul oscuro */
+  padding: 10px 20px; /* Espaciado interno para los elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra debajo del navbar */
+  width: 100%; /* Ocupa el ancho completo de la pantalla */
+  display: flex; /* Alinea los elementos en fila */
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  position: fixed; /* Mantiene el navbar fijo en la parte superior al hacer scroll */
+  top: 0; /* Fija la posición al borde superior */
+  left: 0; /* Fija la posición al borde izquierdo */
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+  transition: background-color 0.3s; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+/* Lista de navegación */
+.navbar-list {
+  list-style: none; /* Elimina los puntos de las listas */
+  display: flex; /* Alinea los elementos de la lista en fila */
+  align-items: center; /* Centra los elementos verticalmente */
+  flex: 1; /* Hace que los elementos ocupen el espacio disponible */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina relleno */
+}
+
+/* Elemento individual del navbar */
+.navbar-item {
+  position: relative; /* Establece el contexto para posicionar el dropdown */
+  margin-right: 20px; /* Añade espacio entre los elementos */
+  height: 10px;
+}
+
+/* Estilo de los enlaces */
+.navbar-link, .dropdown-link {
+  color: #ECF0F1; /* Texto claro */
+  text-decoration: none; /* Elimina subrayado */
+  font-size: 1rem; /* Tamaño de fuente */
+  font-weight: 600; /* Peso de la fuente */
+  padding: 8px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: transparent; /* Fondo transparente */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Suaviza los cambios en hover */
+  position: relative; /* Permite agregar pseudo-elementos como :after */
+  overflow: hidden; /* Oculta contenido que sobresale */
+}
+
+/* Hover para enlaces */
+.navbar-link:hover, .dropdown-link:hover {
+  background-color: #2980B9; /* Fondo azul más brillante */
+  color: #FFFFFF; /* Texto blanco */
+  box-shadow: 0 0 10px rgba(41, 128, 185, 0.5); /* Resplandor */
+}
+
+/* Efecto línea en hover */
+.navbar-link:after {
+  content: ""; /* Pseudo-elemento vacío */
+  position: absolute; /* Posiciona relativo al contenedor */
+  bottom: 0; /* Línea en la parte inferior */
+  left: 50%; /* Comienza en el centro */
+  width: 0; /* Inicialmente no visible */
+  height: 2px; /* Altura de la línea */
+  background-color: #ECF0F1; /* Color claro */
+  transition: width 0.3s, left 0.3s; /* Suaviza los cambios */
+}
+
+.navbar-link:hover:after {
+  width: 100%; /* Se expande al ancho completo */
+  left: 0; /* Se alinea a la izquierda */
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute; /* Flota sobre otros elementos */
+  top: calc(100% + 10px); /* Justo debajo del activador */
+  left: 0; /* Alineado a la izquierda */
+  background-color: #34495E; /* Fondo gris oscuro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  display: grid; /* Usa un diseño en cuadrícula */
+  grid-template-columns: repeat(4, auto); /* Cuatro columnas ajustables */
+  gap: 10px; /* Espaciado entre elementos */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  transition: transform 0.3s; /* Suaviza la animación */
+}
+
+/* Estilo de los enlaces dentro del dropdown */
+.dropdown-link {
+  display: block; /* Se comporta como un bloque */
+  padding: 10px 15px; /* Espaciado interno */
+  color: #ECF0F1; /* Texto claro */
+  text-decoration: none; /* Elimina subrayado */
+  font-size: 0.9rem; /* Tamaño de fuente */
+  background-color: transparent; /* Fondo transparente */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Suaviza cambios de color */
+}
+
+/* Hover para enlaces dentro del dropdown */
+.dropdown-link:hover {
+  background-color: #1ABC9C; /* Verde azulado */
+  color: #FFFFFF; /* Texto blanco */
+  box-shadow: 0 0 10px rgba(26, 188, 156, 0.5); /* Resplandor */
+}
+
+/* Estilo para la imagen de "Inicio" */
+.navbar-logo {
+  height: 50px; /* Ajusta la altura según sea necesario */
+  width: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Animación opcional */
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}

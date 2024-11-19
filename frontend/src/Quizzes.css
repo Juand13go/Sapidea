@@ -1,0 +1,122 @@
+.quizzes-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #ECF0F1; /* Texto claro */
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ECF0F1; /* Texto claro */
+  margin-bottom: 30px;
+}
+
+.quiz-card {
+  background: linear-gradient(135deg, #2980B9, #1ABC9C); /* Degradado azul a verde */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.quiz-card h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #FFFFFF; /* Texto blanco */
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  color: #ECF0F1; /* Texto claro */
+}
+
+label {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea contenido a la izquierda */
+  padding: 12px 20px; /* Espaciado interno amplio */
+  width: 100%; /* Ocupa todo el ancho */
+  box-sizing: border-box; /* Incluye padding y borde dentro del ancho */
+  background-color: rgba(44, 62, 80, 0.9); /* Azul oscuro translúcido */
+  border: 1px solid #1ABC9C; /* Borde verde azulado */
+  border-radius: 8px;
+  margin-bottom: 12px; /* Espaciado entre opciones */
+  transition: background-color 0.3s, border 0.3s;
+  cursor: pointer;
+  color: #ECF0F1; /* Texto claro */
+}
+
+label:hover {
+  background-color: rgba(41, 128, 185, 0.8); /* Azul translúcido brillante */
+  border-color: #2980B9; /* Borde azul más intenso */
+}
+
+input[type="radio"] {
+  margin-left: 600px; /* Espaciado entre el botón de opción y el texto */
+  accent-color: #1ABC9C; /* Verde azulado */
+}
+
+.submit-button {
+  margin-top: 30px;
+  padding: 14px 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #FFFFFF; /* Texto blanco */
+  background-color: #1ABC9C; /* Fondo verde azulado */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #2980B9; /* Azul brillante */
+  transform: translateY(-3px);
+}
+
+.error {
+  color: #E74C3C; /* Rojo para mensajes de error */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.resultados-container {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.resultado-card {
+  background: rgba(44, 62, 80, 0.9); /* Fondo azul oscuro translúcido */
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 6px solid #1ABC9C; /* Borde verde azulado */
+  border-radius: 5px;
+}
+
+.resultado-card h3 {
+  font-size: 1.5em;
+  color: #1ABC9C; /* Verde azulado */
+}
+
+.resultado-card p {
+  font-size: 1.1em;
+  color: #ECF0F1; /* Texto claro */
+  margin: 8px 0;
+}

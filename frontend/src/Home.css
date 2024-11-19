@@ -1,0 +1,191 @@
+/* Configuración general del cuerpo */
+.body {
+  background-color: #010D00; /* Fondo verde muy oscuro */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.home-container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #BDE3F2; /* Fondo azul claro */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo mejorado para el título */
+.home-title {
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+  color: #315259; /* Verde azulado oscuro para el título */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  padding: 15px 25px;
+  border: 1px solid #6A9BA6; /* Borde en verde grisáceo */
+  border-radius: 10px;
+  background-color: rgba(103, 102, 101, 0.1); /* Fondo translúcido sutil */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-title:hover {
+  background-color: rgba(103, 102, 101, 0.2); /* Fondo ligeramente más oscuro */
+  box-shadow: 0px 4px 20px rgba(255, 215, 135, 0.5);
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el contenedor de la descripción */
+.home-description {
+  font-size: 1.1rem;
+  font-family: 'Arial', sans-serif;
+  color: #315259; /* Verde azulado oscuro */
+  text-align: center;
+  padding: 15px 20px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: rgba(103, 102, 101, 0.1); /* Fondo translúcido */
+  border: 1px solid rgba(103, 102, 101, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.home-description:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 12px rgba(103, 102, 101, 0.3);
+  background-color: rgba(103, 102, 101, 0.15);
+}
+
+/* Contenedor de la sección de cursos populares */
+.courses-section {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(103, 102, 101, 0.1);
+  border: 1px solid rgba(103, 102, 101, 0.5);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.courses-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(103, 102, 101, 0.4);
+}
+
+/* Título de la sección de cursos */
+.courses-title {
+  font-size: 2.2rem;
+  font-family: 'Brush Script', cursive;
+  color: #315259; /* Verde azulado oscuro */
+  margin-bottom: 20px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+/* Contenedor de los cursos */
+.courses-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+/* Tarjetas individuales de los cursos */
+.course-card {
+  flex: 1;
+  max-width: 30%;
+  min-width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BDE3F2; /* Fondo azul claro */
+  color: #315259; /* Texto verde azulado oscuro */
+  border: 2px solid #6A9BA6; /* Borde en verde grisáceo */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out, background-color 0.3s;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  background-color: #315259; /* Fondo verde azulado oscuro */
+  color: #FFF; /* Texto blanco */
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(122, 85, 48, 0.3);
+}
+
+/* Botón Explorar Cursos */
+.explore-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+  background-color: #315259; /* Fondo verde azulado oscuro */
+  color: #FFFFFF; /* Texto blanco */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.explore-button:hover span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.explore-button:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.explore-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #010D00; /* Fondo verde muy oscuro */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');

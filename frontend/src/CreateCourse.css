@@ -1,0 +1,60 @@
+/* CreateCourse.css */
+.create-course-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #6A9BA6; /* Bordes en verde grisáceo suave */
+  border-radius: 5px;
+  background-color: #BDE3F2; /* Fondo azul muy claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-course-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #315259; /* Título en verde azulado oscuro */
+}
+
+.create-course-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-course-container label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #315259; /* Texto de etiquetas en verde azulado oscuro */
+}
+
+.create-course-container input,
+.create-course-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #6A9BA6; /* Bordes en verde grisáceo suave */
+  border-radius: 3px;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #315259; /* Texto oscuro en campos de entrada */
+}
+
+.create-course-container button {
+  padding: 10px;
+  background-color: #315259; /* Fondo verde azulado oscuro */
+  color: #FFFFFF; /* Texto blanco */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-course-container button:hover {
+  background-color: #062601; /* Verde muy oscuro al pasar el mouse */
+  transform: translateY(-3px);
+}
+
+.create-course-container .error {
+  color: #FF6B6B; /* Rojo suave para errores */
+  text-align: center;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,125 @@
+/* Contenedor principal del perfil */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Botón de volver */
+  .back-button {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #6e45e2;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #88d3ce;
+    transform: translateY(-2px);
+  }
+  
+  /* Título del perfil */
+  .profile-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Rol del usuario */
+  .profile-role {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Sección de cursos */
+  .profile-section-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-courses {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-course-item {
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Barra de progreso */
+  .progress-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Texto de progreso */
+  .progress-text {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Contenedor de carga */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ffffff;
+    border-top: 5px solid #6e45e2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading-text {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Animación de spinner */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

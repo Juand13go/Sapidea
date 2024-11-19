@@ -1,0 +1,76 @@
+.cursos-populares-container {
+    background-color: #F3F8FB; /* Fondo claro */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .cursos-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .cursos-title {
+    font-size: 2.5rem;
+    color: #315259; /* Verde azulado oscuro */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cursos-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+/* Tarjetas individuales de los cursos */
+.course-card {
+  flex: 1;
+  max-width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Distribuye el contenido con espacio */
+  padding: 15px;
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #315259; /* Texto verde azulado oscuro */
+  border: 2px solid #6A9BA6; /* Borde verde grisáceo */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out, background-color 0.3s;
+}
+  
+  .curso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .curso-titulo {
+    font-size: 1.5rem;
+    color: #315259;
+    margin-bottom: 15px;
+  }
+  
+  .curso-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .curso-descripcion {
+    font-size: 1rem;
+    color: #707070;
+  }
+
+  /* Videos dentro de las tarjetas */
+.course-video {
+    width: 100%; /* El video ocupará todo el ancho disponible de la tarjeta */
+    max-height: 150px; /* Altura máxima para mantener proporción */
+    object-fit: cover; /* Ajusta el contenido para llenar el espacio sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px;
+  }
+  
+  

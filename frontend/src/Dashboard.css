@@ -1,0 +1,55 @@
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #A67C52; /* Marrón suave para título */
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-welcome {
+  font-size: 1.5rem;
+  color: #ffffff; /* Texto oscuro */
+}
+
+.user-role {
+  font-size: 1.2rem;
+  color: #777777; /* Gris para el rol */
+}
+
+.admin-section, .student-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #FFEFBD; /* Fondo beige para tarjetas */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  color: #ffffff; /* Texto oscuro */
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #A67C52; /* Marrón para títulos de sección */
+}
+
+/* Nueva clase para texto en blanco */
+.text-white {
+  color: #ffffff; /* Letra blanca */
+}

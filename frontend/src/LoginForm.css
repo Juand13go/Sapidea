@@ -1,0 +1,154 @@
+/* Fondo animado que contiene el texto de SAPIDEA */
+.background-animated {
+  background: url('https://your-image-url.com') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.background-animated::before {
+  content: "SAPIDEA";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1); /* Texto translúcido */
+}
+
+/* Contenedor principal del formulario */
+.login-form-container {
+  background-color: rgba(44, 62, 80, 0.9); /* Azul oscuro translúcido */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 350px; /* Ajustado para un mejor diseño */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos del formulario */
+.login-form {
+  width: 100%;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-form-input {
+  width: calc(100% - 20px); /* Tamaño alineado con las etiquetas */
+  padding: 10px;
+  border: 1px solid #2980B9; /* Azul brillante */
+  border-radius: 5px;
+  margin-top: 5px;
+  outline: none;
+  color: #ECF0F1; /* Texto claro */
+  font-size: 1rem;
+}
+
+.login-form-input::placeholder {
+  color: #34495E; /* Gris oscuro */
+}
+
+.login-form-input:focus {
+  border-color: #1ABC9C; /* Verde azulado */
+  background-color: rgba(26, 188, 156, 0.1); /* Fondo sutil */
+}
+
+/* Contenedor de entrada de contraseña */
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password-button {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background-color: transparent;
+  border: none;
+  color: #ECF0F1; /* Blanco claro */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form-title{
+  padding-top: 50px ; 
+  color: #FFFFFF;
+}
+
+/* Botón principal */
+.login-form-button {
+  background-color: #2980B9; /* Azul brillante */
+  color: #FFFFFF; /* Texto blanco */
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.login-form-button:hover {
+  background-color: #1ABC9C; /* Verde azulado */
+}
+
+/* Mensaje de error */
+.login-form-error {
+  margin-top: 10px;
+  color: #E74C3C; /* Rojo para errores */
+  font-weight: bold;
+}
+
+/* Contenedor para enlaces y botones secundarios */
+.login-form-links {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form-link {
+  color: #ECF0F1; /* Texto claro */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-form-link:hover {
+  text-decoration: underline;
+}
+
+/* Botón de "Olvidaste tu contraseña" */
+.forgot-password-button {
+  background: none;
+  border: none;
+  color: #2980B9; /* Azul brillante */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.forgot-password-button:hover {
+  text-decoration: underline;
+}
+
+/* Ajuste del tamaño de etiquetas y campos de entrada */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ECF0F1; /* Texto claro */
+  margin-bottom: 5px;
+  display: block; /* Asegura alineación con los inputs */
+}

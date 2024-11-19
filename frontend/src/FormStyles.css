@@ -1,0 +1,211 @@
+/* Global */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #BDE3F2; /* Fondo azul muy claro */
+  color: #315259; /* Texto en verde azulado oscuro */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #315259; /* Título en verde azulado oscuro */
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Contenedor general de formularios */
+.form-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto; /* Margin superior más grande para separar de la parte superior */
+  padding: 2rem;
+  background-color: #FFFFFF; /* Fondo blanco para los formularios */
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto al pasar el ratón */
+}
+
+.form-container:hover {
+  transform: scale(1.02); /* Pequeña animación de escala al pasar el ratón */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilos del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Mayor espacio entre los campos */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  color: #315259; /* Color de las etiquetas en verde azulado */
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #F5F5F5; /* Fondo gris claro para los inputs */
+  color: #315259;
+  border: 1px solid #6A9BA6; /* Borde verde grisáceo */
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #315259; /* Resaltar el borde en verde azulado */
+  outline: none;
+}
+
+input:hover, textarea:hover, select:hover {
+  background-color: #E0F4F8; /* Fondo ligeramente más claro al pasar el ratón */
+  border-color: #315259; /* Resaltar el borde */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Botones */
+button.form-button, .back-button {
+  padding: 12px 20px;
+  background-color: #315259; /* Fondo verde azulado oscuro */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para los botones */
+}
+
+button.form-button:hover, .back-button:hover {
+  background-color: #062601; /* Verde muy oscuro al pasar el ratón */
+  transform: translateY(-3px); /* Animación de levitación */
+}
+
+button.form-button:active, .back-button:active {
+  transform: translateY(1px); /* Efecto de presionar el botón */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra más suave al hacer clic */
+}
+
+/* Estilo específico para el botón de Volver */
+.back-button {
+  background-color: #6A9BA6; /* Verde grisáceo */
+  width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #315259; /* Verde azulado oscuro */
+}
+
+/* Mensajes de éxito y error */
+.form-message {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: #27AE60; /* Verde de éxito */
+  color: white;
+}
+
+.form-message.error {
+  background-color: #F44336;/* Rojo de error */
+  color: white;
+}
+
+/* Tabs de navegación */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 12px 25px;
+  margin: 0 15px;
+  background-color: #315259; /* Verde azulado oscuro */
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tab:hover, .tab.active {
+  background-color: #6A9BA6; /* Verde grisáceo al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escala para las pestañas activas */
+}
+
+/* Estilos para listas */
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  background: none;
+  border: none;
+  color: #FF0000; /* Rojo para eliminar opciones */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+/* Estilos para formularios específicos */
+input[type="url"] {
+  background-color: #F5F5F5;
+}
+
+select {
+  background-color: #F5F5F5;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+input[type="text"], input[type="number"] {
+  background-color: #F5F5F5;
+}
+
+/* Animaciones */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Solo los campos deshabilitados (donde no se puede escribir) tendrán la animación */
+input[disabled], select[disabled], textarea[disabled] {
+  animation: bounce 0.5s ease-out infinite alternate; /* Animación de salto solo para los campos deshabilitados */
+}
+
+/* Nueva animación de resaltar */
+input:hover, select:hover, textarea:hover {
+  animation: bounce 0.5s ease-out infinite alternate; /* Agregado para resaltar campos al pasar el ratón */
+}
